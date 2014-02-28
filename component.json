@@ -1,0 +1,27 @@
+{
+  "name": "SlickGrid",
+  "repo": "jolindqv/SlickGrid",
+  "description": "SlickGrid component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "slick.grid.js",
+  "scripts": [
+    "slick.core.js",
+    "slick.dataview.js",
+    "slick.editors.js",
+    "slick.formatters.js",
+    "slick.grid.js",
+    "slick.groupitemmetadataprovider.js",
+    "slick.remotemodel.js",
+    "lib/jquery.event.drag-2.2.js",
+    "lib/jquery.event.drop-2.2.js"
+  ],
+  "styles": [
+    "slick.grid.css"
+  ]
+}

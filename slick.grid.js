@@ -16,6 +16,11 @@
  *     and do proper cleanup.
  */
 
+// Changes for component compatibility:
+jQuery = require('jquery');
+require('./lib/jquery.event.drag-2.2');
+require('./slick.core');
+
 // make sure required JavaScript modules are loaded
 if (typeof jQuery === "undefined") {
   throw "SlickGrid requires jquery module to be loaded";
@@ -1515,7 +1520,7 @@ if (typeof Slick === "undefined") {
       } else {
         $canvas[0].removeChild(cacheEntry.rowNode);
       }
-      
+
       delete rowsCache[row];
       delete postProcessedRows[row];
       renderedRows--;
@@ -2162,7 +2167,7 @@ if (typeof Slick === "undefined") {
           $canvas[0].removeChild(zombieRowNodeFromLastMouseWheelEvent);
           zombieRowNodeFromLastMouseWheelEvent = null;
         }
-        rowNodeFromLastMouseWheelEvent = rowNode;      
+        rowNodeFromLastMouseWheelEvent = rowNode;
       }
     }
 
@@ -2217,7 +2222,7 @@ if (typeof Slick === "undefined") {
             cancelEditAndSetFocus();
           } else if (e.which == 34) {
             navigatePageDown();
-            handled = true;           
+            handled = true;
           } else if (e.which == 33) {
             navigatePageUp();
             handled = true;
@@ -2774,7 +2779,7 @@ if (typeof Slick === "undefined") {
         var prevActivePosX = activePosX;
         while (cell <= activePosX) {
           if (canCellBeActive(row, cell)) {
-            prevCell = cell;  
+            prevCell = cell;
           }
           cell += getColspan(row, cell);
         }
