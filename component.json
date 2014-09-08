@@ -19,11 +19,24 @@
     "slick.groupitemmetadataprovider.js",
     "slick.remotemodel.js",
     "lib/jquery.event.drag-2.2.js",
-    "lib/jquery.event.drop-2.2.js"
+    "lib/jquery.event.drop-2.2.js",
+    "plugins/slick.autotooltips.js",
+    "plugins/slick.cellcopymanager.js",
+    "plugins/slick.cellrangedecorator.js",
+    "plugins/slick.cellrangeselector.js",
+    "plugins/slick.cellselectionmodel.js",
+    "plugins/slick.checkboxselectcolumn.js",
+    "plugins/slick.headerbuttons.js",
+    "plugins/slick.headermenu.js",
+    "plugins/slick.rowmovemanager.js",
+    "plugins/slick.rowselectionmodel.js"
+
   ],
   "styles": [
     "slick.grid.css",
-    "slick-default-theme.css"
+    "slick-default-theme.css",
+    "plugins/slick.headerbuttons.css",
+    "plugins/slick.headermenu.css"
   ],
   "images": [
     "images/actions.gif",
