@@ -1409,10 +1409,16 @@ if (typeof Slick === "undefined") {
 
     function appendRowHtml(stringArray, row, range, dataLength) {
       var d = getDataItem(row);
+      var selected = false;
+      if( d && d.selected){
+        //Add an option for persistent row highlighting
+        selected = true;
+      }
       var dataLoading = row < dataLength && !d;
       var rowCss = "slick-row" +
           (dataLoading ? " loading" : "") +
           (row === activeRow ? " active" : "") +
+          (selected ? " selected" : "") +
           (row % 2 == 1 ? " odd" : " even");
 
       if (!d) {
@@ -3275,12 +3281,12 @@ if (typeof Slick === "undefined") {
       }
       selectionModel.setSelectedRanges(rowsToRanges(rows));
     }
-    
+
     function scrollPort(px) {
        scrollTo(px);
        render();
     }
-  
+
 
     //////////////////////////////////////////////////////////////////////////////////////////////
     // Debug
